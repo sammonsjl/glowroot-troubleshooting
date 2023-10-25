@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  tomcat:
+    container_name: easybuggy
+    build: '.'
+    ports:
+        - 8081:8080
+    volumes:
+      - ./shared:/shared
